@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planner</title>
+</head>
+<body>
+    <h1>Welcome to the user page of Trip Planner</h1>
+
+    <div class="trips-list"></div>
+    <button class="btn btn-gettrips" type='submit'>Get Trips</button>
+    <hr>
+    <form action="/trip-planner/api/create" method="POST">
+        <div>
+            <label for="trip-name"> Trip Name:</label>
+            <input type="text" name="tripname">
+        </div>
+        <div>
+            <label for="trip-date"> Trip Date:</label>
+            <input type="text" name="tripdate">
+        </div>
+
+        <div>
+            <label for="tripdescription"> Trip Description:</label>
+            <input type="text" name="tripdescription">
+        </div>
+        
+        <div>
+            <button class="btn btn-add" type='submit'>Add Trip</button>
+        </div>
+    </form>
+
+    <script src="../js/planner.js"></script>
+</body>
+</html>
